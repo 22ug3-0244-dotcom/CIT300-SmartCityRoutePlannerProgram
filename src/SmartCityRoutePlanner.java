@@ -1,5 +1,4 @@
-// SmartCityRoutePlanner.java
-// Leader - Main class for Smart City Route Planner
+
 
 import java.util.Scanner;
 
@@ -8,7 +7,7 @@ public class SmartCityRoutePlanner {
     public static void main(String[] args) {
         System.out.println("=== SMART CITY ROUTE PLANNER ===\n");
 
-        // Create helper classes
+
         CityGraph graph = new CityGraph();
         LocationAVLTree tree = new LocationAVLTree();
         Scanner sc = new Scanner(System.in);
@@ -28,12 +27,12 @@ public class SmartCityRoutePlanner {
 
             if (!sc.hasNextInt()) {
                 System.out.println("❌ Please enter a valid number!");
-                sc.next(); // clear wrong input
+                sc.next(); 
                 continue;
             }
 
             choice = sc.nextInt();
-            sc.nextLine(); // clear newline
+            sc.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -53,7 +52,7 @@ public class SmartCityRoutePlanner {
                     System.out.print("Enter Location ID to remove: ");
                     String removeId = sc.nextLine();
                     graph.removeLocation(removeId);
-                    // optional: tree deletion can be added if needed
+                    
                     break;
 
                 case 3:

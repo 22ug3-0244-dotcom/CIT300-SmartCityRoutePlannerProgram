@@ -18,10 +18,10 @@ public class MenuInterface {
             System.out.println("7. Exit");
             System.out.print("Enter your choice (1-7): ");
 
-            // check if input is a number
+            
             if (!sc.hasNextInt()) {
                 System.out.println("❌ Please enter a valid number!");
-                sc.next(); // clear invalid input
+                sc.next(); 
                 continue;
             }
 
